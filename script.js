@@ -7,7 +7,7 @@ document.getElementById("opForm").addEventListener("submit", async function(even
     const symptom = document.getElementById("symptom").value;
     const gender = document.getElementById("gender").value;
 
-    const response = await fetch("https://your-backend-url.onrender.com/generate", {
+    const response = await fetch("https://op-backend-wh2q.onrender.com/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, age, mobile, symptom, gender })
