@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,12 +21,12 @@
             <input type="text" id="mobile" pattern="\d{10}" required>
 
             <label for="symptom">Select Symptom:</label>
-            <select id="symptom">
-                <option>Fever</option>
-                <option>Chest Pain</option>
-                <option>Stomach Pain</option>
-                <option>Headache</option>
-                <option>Skin Rash</option>
+            <select id="symptom" onchange="updateDoctors()">
+                <option value="Fever">Fever</option>
+                <option value="Chest Pain">Chest Pain</option>
+                <option value="Stomach Pain">Stomach Pain</option>
+                <option value="Headache">Headache</option>
+                <option value="Skin Rash">Skin Rash</option>
             </select>
 
             <label for="gender">Select Gender:</label>
@@ -37,10 +38,7 @@
 
             <label for="doctor">Select Doctor:</label>
             <select id="doctor">
-                <option>Dr. Smith</option>
-                <option>Dr. Johnson</option>
-                <option>Dr. Williams</option>
-                <option>Dr. Brown</option>
+                <option>Select Symptom First</option>
             </select>
 
             <label for="appointment">Appointment Date:</label>
