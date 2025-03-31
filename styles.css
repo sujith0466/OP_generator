@@ -1,25 +1,30 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    background-color: #e3f2fd;
     text-align: center;
+    padding: 20px;
 }
 
 .container {
     background: white;
-    padding: 20px;
-    margin: 50px auto;
-    width: 300px;
-    box-shadow: 0px 0px 10px 0px #0000001a;
+    padding: 30px;
+    margin: auto;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 h2 {
     color: #007bff;
+    margin-bottom: 15px;
 }
 
 input, select, button {
     width: 100%;
     padding: 10px;
-    margin: 5px 0;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 button {
@@ -27,6 +32,7 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
@@ -34,5 +40,6 @@ button:hover {
 }
 
 p {
-    color: red;
+    color: green;
+    font-weight: bold;
 }
