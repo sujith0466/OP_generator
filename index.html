@@ -22,6 +22,7 @@
 
             <label for="symptom">Select Symptom:</label>
             <select id="symptom" onchange="updateDoctors()">
+                <option value="" disabled selected>Select a symptom</option>
                 <option value="Fever">Fever</option>
                 <option value="Chest Pain">Chest Pain</option>
                 <option value="Stomach Pain">Stomach Pain</option>
@@ -31,6 +32,7 @@
 
             <label for="gender">Select Gender:</label>
             <select id="gender">
+                <option value="" disabled selected>Select gender</option>
                 <option>Male</option>
                 <option>Female</option>
                 <option>Other</option>
@@ -38,7 +40,7 @@
 
             <label for="doctor">Select Doctor:</label>
             <select id="doctor">
-                <option>Select Symptom First</option>
+                <option value="" disabled selected>Please select a symptom first</option>
             </select>
 
             <label for="appointment">Appointment Date:</label>
