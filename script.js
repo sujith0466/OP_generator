@@ -49,6 +49,9 @@ document.getElementById("opForm").addEventListener("submit", async function(even
     const gender = document.getElementById("gender").value;
     const doctor = document.getElementById("doctor").value;
     const appointment = document.getElementById("appointment").value;
+    
+    const loadingSpinner = document.getElementById("loading-spinner");
+    loadingSpinner.style.display = "block";
 
     try {
         const response = await fetch("https://op-backend-wh2q.onrender.com/generate", {
@@ -66,5 +69,7 @@ document.getElementById("opForm").addEventListener("submit", async function(even
         window.open(url);
     } catch (error) {
         console.error("Error:", error);
+    } finally {
+        loadingSpinner.style.display = "none";
     }
 });
