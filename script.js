@@ -19,14 +19,24 @@ function updateDoctors() {
     const doctorSelect = document.getElementById("doctor");
     doctorSelect.innerHTML = "";
 
-    const department = diseaseMap[symptom];
-    const doctors = doctorsMap[department];
+    if (symptom in diseaseMap) {
+        const department = diseaseMap[symptom];
+        const doctors = doctorsMap[department];
 
-    doctors.forEach(doctor => {
-        let option = document.createElement("option");
-        option.textContent = doctor;
-        doctorSelect.appendChild(option);
-    });
+        doctors.forEach(doctor => {
+            let option = document.createElement("option");
+            option.textContent = doctor;
+            option.value = doctor;
+            doctorSelect.appendChild(option);
+        });
+    } else {
+        let defaultOption = document.createElement("option");
+        defaultOption.textContent = "Please select a symptom first";
+        defaultOption.value = "";
+        defaultOption.disabled = true;
+        defaultOption.selected = true;
+        doctorSelect.appendChild(defaultOption);
+    }
 }
 
 document.getElementById("opForm").addEventListener("submit", async function(event) {
