@@ -7,11 +7,11 @@ const diseaseMap = {
 };
 
 const doctorsMap = {
-    "General Medicine": ["Dr. Smith", "Dr. Johnson", "Dr. Lee"],
-    "Cardiology": ["Dr. Brown", "Dr. Davis", "Dr. Wilson"],
-    "Gastroenterology": ["Dr. Taylor", "Dr. Anderson", "Dr. Thomas"],
-    "Neurology": ["Dr. Jackson", "Dr. White", "Dr. Harris"],
-    "Dermatology": ["Dr. Martin", "Dr. Thompson", "Dr. Garcia"]
+    "General Medicine": ["Dr. Smith (General Medicine)", "Dr. Johnson (General Medicine)", "Dr. Lee (General Medicine)"],
+    "Cardiology": ["Dr. Brown (Cardiologist)", "Dr. Davis (Cardiologist)", "Dr. Wilson (Cardiologist)"],
+    "Gastroenterology": ["Dr. Taylor (Gastroenterologist)", "Dr. Anderson (Gastroenterologist)", "Dr. Thomas (Gastroenterologist)"],
+    "Neurology": ["Dr. Jackson (Neurologist)", "Dr. White (Neurologist)", "Dr. Harris (Neurologist)"],
+    "Dermatology": ["Dr. Martin (Dermatologist)", "Dr. Thompson (Dermatologist)", "Dr. Garcia (Dermatologist)"]
 };
 
 function updateDoctors() {
