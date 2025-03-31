@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -36,7 +35,18 @@
                 <option>Other</option>
             </select>
 
-        <button id="generate-op-btn">Generate OP Sheet</button>
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor">
+                <option>Dr. Smith</option>
+                <option>Dr. Johnson</option>
+                <option>Dr. Williams</option>
+                <option>Dr. Brown</option>
+            </select>
+
+            <label for="appointment">Appointment Date:</label>
+            <input type="date" id="appointment" required>
+
+            <button id="generate-op-btn" type="submit">Generate OP Sheet</button>
         </form>
         <p id="message"></p>
     </div>
